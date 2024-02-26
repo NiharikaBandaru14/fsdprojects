@@ -1,0 +1,5 @@
+package com.tcs.boot.securityconfig;
+
+public class EmpSecurityConfig {
+
+}

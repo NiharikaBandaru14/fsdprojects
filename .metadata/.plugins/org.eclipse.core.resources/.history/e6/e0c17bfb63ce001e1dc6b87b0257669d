@@ -1,0 +1,76 @@
+package com.banking.transaction;
+
+import java.util.Date;
+
+public class Transaction {
+	
+	private int tid;
+	private String transferFrom;
+	private String transferTo;
+	private double amount;
+	private Date date;
+	
+	public Transaction() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Transaction(int tid, String transferFrom, String transferTo, double amount, Date date) {
+		super();
+		this.tid = tid;
+		this.transferFrom = transferFrom;
+		this.transferTo = transferTo;
+		this.amount = amount;
+		this.date = date;
+	}
+
+	public int getTid() {
+		return tid;
+	}
+
+	public void setTid(int tid) {
+		this.tid = tid;
+	}
+
+	public String getTransferFrom() {
+		return transferFrom;
+	}
+
+	public void setTransferFrom(String transferFrom) {
+		this.transferFrom = transferFrom;
+	}
+
+	public String getTransferTo() {
+		return transferTo;
+	}
+
+	public void setTransferTo(String transferTo) {
+		this.transferTo = transferTo;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	@Override
+	public String toString() {
+		return "Transaction [tid=" + tid + ", transferFrom=" + transferFrom + ", transferTo=" + transferTo + ", amount="
+				+ amount + ", date=" + date + "]";
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,11 @@
+package com.tcs.collections;
+
+public class Transcation {
+	
+	int tid;
+	String tranDate;
+	double tranAmount;
+	int investorId;
+	
+
+}

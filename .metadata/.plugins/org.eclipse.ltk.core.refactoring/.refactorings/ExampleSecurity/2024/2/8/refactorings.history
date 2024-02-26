@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ust.boot.resources&apos; to &apos;com.tcs.boot.resources&apos;&#x0A;- Original project: &apos;ExampleSecurity&apos;&#x0A;- Original element: &apos;ExampleSecurity/src/main/java/com.ust.boot.resources&apos;&#x0A;- Renamed element: &apos;ExampleSecurity/src/main/java/com.tcs.boot.resources&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;com.ust.boot.resources&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ust.boot.resources" name="com.tcs.boot.resources" qualified="false" references="true" stamp="1708664861106" textual="false" version="1.0"/>
+</session>

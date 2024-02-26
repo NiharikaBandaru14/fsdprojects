@@ -1,0 +1,5 @@
+package com.tcs.boot.resources;
+
+public class EmployeeResource {
+
+}

@@ -1,0 +1,56 @@
+package com.banking.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.banking.entity.Transaction;
+import com.banking.repository.TransactionRepository;
+
+
+
+
+@Service
+public class TransactionService {
+	
+	@Autowired
+	TransactionRepository repo;
+	
+	public List<Transaction> getTransactions(){
+		List<Transaction> list = repo.findAll();
+		return list;
+	}
+	
+	public Transaction getTransactionById(int id) {
+		
+		Optional<Transaction> tran = repo.findById(id);
+		return tran.get();
+	}
+	
+	public Transaction save(Transaction t) {
+		return repo.save(t);
+	}
+	
+	public Transaction update(Transaction t) {
+		Optional<Transaction> optional = repo.findById(t.getTid());
+		Transaction tempTransaction = optional.get();
+		tempTransaction.setTransferFrom(t.getTransferFrom());
+		tempTransaction.setTransferTo(t.getTransferTo());
+		tempTransaction.setAmount(t.getAmount());
+		tempTransaction.setDate(t.getDate());
+
+		
+		repo.save(tempTransaction);
+		return tempTransaction;
+	
+	
+	}
+	
+	public boolean delete(int id) {
+		repo.deleteById(id);
+		return true;
+	}
+
+}

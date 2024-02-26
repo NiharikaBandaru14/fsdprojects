@@ -1,0 +1,42 @@
+package com.tcs.exceptions;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+//an exception is an object
+//objects are created at runtime means an exception will occur only at runtime
+//when it occurs the program ,, stops abruptly if it is not handled
+
+public class TestExceptions {
+	
+	public Exception method(RuntimeException r) throws Exception{
+		if(r==null)
+			throw new Exception("poyachii...");
+		else
+			return new RuntimeException("returning without exception");
+	}
+	
+	public static void main(String[] args) {
+		
+		try {
+			FileInputStream fis  = new FileInputStream("");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		/*try {
+			System.out.println(10/0);  ///exception raised
+		}catch(ArithmeticException e) {
+			System.out.println(e.toString());
+		}
+		System.out.println("after division");*/
+	}
+	
+	
+
+}

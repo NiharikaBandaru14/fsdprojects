@@ -1,0 +1,20 @@
+package com.tcs.exceptions;
+
+//an exception is an object
+//objects are created at runtime means an exception will occur only at runtime
+//when it occurs the program ,, stops abruptly if it is not handled
+
+public class TestExceptions {
+	
+	public static void main(String[] args) {
+		try {
+			System.out.println(10/0);  ///exception raised
+		}catch(ArithmeticException e) {
+			System.out.println(e.toString());
+		}
+		System.out.println("after division");
+	}
+	
+	
+
+}

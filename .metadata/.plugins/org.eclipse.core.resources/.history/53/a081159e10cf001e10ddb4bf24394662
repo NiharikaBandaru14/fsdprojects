@@ -1,0 +1,14 @@
+package com.tcs.patterns;
+
+public class Connection {
+	
+	private Connection() {
+		
+		
+	}
+	public static Connection getConnection() {
+		return new Connection();
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package com.tcs.javaconfig;
+
+public class TestBean2 {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ctxt =  new 
+	}
+
+}

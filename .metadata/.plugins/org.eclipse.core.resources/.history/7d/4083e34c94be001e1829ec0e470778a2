@@ -1,0 +1,28 @@
+package com.tcs.training;
+
+public class TestLoops {
+	public static void main(String[] args) {
+		//starting point
+		//condition
+		//statements
+		//direction<>
+		//termination
+		
+		int start=0;
+		int stop=100;
+		while(start <= stop) {
+			System.out.println("Run="+ start);
+			start++;
+		}
+		
+		for(start=1 ; start <= stop; start++) {
+			System.out.println("run="+start);
+		}
+		
+		
+		for(stop=100; start<=top ; stop--) {
+			System.out.println(stop);
+		}
+	}
+
+}

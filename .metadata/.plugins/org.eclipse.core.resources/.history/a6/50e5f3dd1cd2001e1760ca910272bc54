@@ -1,0 +1,26 @@
+package com.tcs.boot.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.tcs.boot.model.MyUserDetails;
+import com.tcs.boot.model.User;
+import com.tcs.boot.model.UserRepository;
+
+public class MyUserDetailService {
+	
+	@Autowired
+	UserRepository repo;
+	
+	@Override
+	public UserDetails loadUserByUserName(String username)throws UsernameNotFoundException{
+		Optional<User> user = repo.findByUserName(username);
+		user.orElseThrow(()->(new UsernameNotFoundException("Not Found: "+username)));
+		
+		return user.map(MyUserDetails::new).get();
+	}
+
+}

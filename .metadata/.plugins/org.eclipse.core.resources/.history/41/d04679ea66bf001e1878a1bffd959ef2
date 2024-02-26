@@ -1,0 +1,9 @@
+package com.tcs.oops.Inheritance;
+
+public class InvestmentInstrument {
+
+	int iiId; //instrument could be a share, bond, deposit, security
+	String title;
+	String type;
+	double fund;
+}
